@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(findstr:*)",
+      "Bash(pip install:*)",
+      "Bash(dir:*)",
+      "Bash(start python main.py)",
+      "Bash(tasklist)",
+      "Bash(taskkill:*)",
+      "Bash(start /B python:*)",
+      "Bash(powershell:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(playwright install:*)",
+      "Bash(timeout 5 tail -f trading_system.log)",
+      "Bash(more:*)",
+      "Bash(timeout:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(find:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

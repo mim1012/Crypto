@@ -1,0 +1,34 @@
+============================================================
+전체 시스템 기능 검증 리포트
+검증 시간: 2025-09-23 14:53:22
+============================================================
+
+
+[시스템]
+----------------------------------------
+❌ test_1_entry_conditions - 'EntryTab' object has no attribute 'ma_checkbox'
+❌ test_2_exit_conditions - 'ExitTab' object has no attribute 'pcs_apply_btn'
+❌ test_3_position_management - 'PositionTab' object has no attribute 'leverage_spinbox'
+❌ test_6_control_buttons - 'PositionTab' object has no attribute 'start_button'
+❌ test_7_data_flow - 'MainWindow' object has no attribute 'btc_price'
+❌ test_8_integration - 'NoneType' object has no attribute 'entry_conditions'
+
+[리스크]
+----------------------------------------
+✅ 최대 레버리지 - 20x
+✅ 최대 포지션 수 - 5개
+✅ 최대 포지션 크기 - $50,000
+✅ 일일 최대 거래 - 100회
+✅ 익절 후 손절 시 자동 중지
+
+[시간제어]
+----------------------------------------
+❌ 거래 시간대 설정 - UI 요소 없음
+❌ 일일 수익 목표 - UI 요소 없음
+❌ 일일 손실 한도 - UI 요소 없음
+
+============================================================
+최종 결과: 5/14 테스트 통과 (35.7%)
+
+핵심 기능 체크리스트:
+----------------------------------------

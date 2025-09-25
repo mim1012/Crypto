@@ -1,0 +1,193 @@
+{
+  "exchanges": [
+    {
+      "name": "binance",
+      "api_key": "180791d7f5b4070fcf13768ec498dadb5ea4b535f1abbe6da5865101796a6d09",
+      "api_secret": "a19896d585d7f36b896a7e66262951de7d2d8691c2d9df7873a810e396d67584",
+      "testnet": true,
+      "enabled": true
+    },
+    {
+      "name": "bybit",
+      "api_key": "",
+      "api_secret": "",
+      "testnet": true,
+      "enabled": true
+    }
+  ],
+  "trading": {
+    "symbol": "BTCUSDT",
+    "leverage": 5,
+    "position_size": 500.0,
+    "risk_percentage": 2.0,
+    "max_positions": 3,
+    "cooldown_minutes": 1,
+    "min_confidence": 0.3
+  },
+  "entry": {
+    "combination_mode": "OR",
+    "ma_enabled": true,
+    "ma_period": 10,
+    "ma_condition": "close_above",
+    "pc_enabled": true,
+    "pc_period": 20,
+    "pc_condition": "upper_buy",
+    "orderbook_enabled": true,
+    "candle_enabled": false,
+    "tick_enabled": true,
+    "ma_cross": {
+      "short_period": 5,
+      "long_period": 20,
+      "confidence_threshold": 0.3,
+      "enabled": true
+    },
+    "price_channel": {
+      "period": 10,
+      "confidence_threshold": 0.3,
+      "enabled": true
+    }
+  },
+  "exit": {
+    "pcs_enabled": true,
+    "pcs_steps": [
+      {
+        "step": 1,
+        "percentage": 0.5,
+        "enabled": true
+      },
+      {
+        "step": 2,
+        "percentage": 1.0,
+        "enabled": true
+      },
+      {
+        "step": 3,
+        "percentage": 1.5,
+        "enabled": true
+      },
+      {
+        "step": 4,
+        "percentage": 8,
+        "enabled": true
+      },
+      {
+        "step": 5,
+        "percentage": 10,
+        "enabled": true
+      },
+      {
+        "step": 6,
+        "percentage": 12,
+        "enabled": true
+      },
+      {
+        "step": 7,
+        "percentage": 14,
+        "enabled": true
+      },
+      {
+        "step": 8,
+        "percentage": 16,
+        "enabled": true
+      },
+      {
+        "step": 9,
+        "percentage": 18,
+        "enabled": true
+      },
+      {
+        "step": 10,
+        "percentage": 20,
+        "enabled": true
+      },
+      {
+        "step": 11,
+        "percentage": 22,
+        "enabled": true
+      },
+      {
+        "step": 12,
+        "percentage": 24,
+        "enabled": true
+      }
+    ],
+    "trailing_enabled": false,
+    "trailing_percentage": 2.0,
+    "tick_exit_enabled": false,
+    "breakeven_enabled": false,
+    "pcs_system": {
+      "enabled": true,
+      "active_steps": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  "time": {
+    "enabled": false,
+    "weekday_settings": {
+      "monday": {
+        "enabled": true,
+        "start": "00:00",
+        "end": "23:59"
+      },
+      "tuesday": {
+        "enabled": true,
+        "start": "00:00",
+        "end": "23:59"
+      },
+      "wednesday": {
+        "enabled": true,
+        "start": "00:00",
+        "end": "23:59"
+      },
+      "thursday": {
+        "enabled": true,
+        "start": "00:00",
+        "end": "23:59"
+      },
+      "friday": {
+        "enabled": true,
+        "start": "00:00",
+        "end": "23:59"
+      },
+      "saturday": {
+        "enabled": true,
+        "start": "00:00",
+        "end": "23:59"
+      },
+      "sunday": {
+        "enabled": true,
+        "start": "00:00",
+        "end": "23:59"
+      }
+    },
+    "always_on": true,
+    "exclude_holidays": false
+  },
+  "risk": {
+    "max_leverage": 10,
+    "position_mode": "단방향",
+    "auto_leverage": false,
+    "max_daily_loss": 5.0,
+    "max_position_size": 10000.0,
+    "stop_loss_percentage": 2.0,
+    "take_profit_percentage": 4.0
+  },
+  "gui": {
+    "window_width": 1200,
+    "window_height": 800,
+    "update_interval": 1000,
+    "auto_save": true,
+    "theme": "light"
+  },
+  "_metadata": {
+    "version": "2.0.0",
+    "created": "2025-09-17T22:58:35.753340",
+    "description": "암호화폐 자동매매 시스템 설정"
+  }
+}
